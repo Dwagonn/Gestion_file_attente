@@ -62,15 +62,22 @@ def caisses_aleatoires():
     while nb_clients != 0:
         caisse_ajout = randint(1, 5)
 
-        if caisse_ajout == 1:
-            pass
-        case caisse_ajout == 2:
-            pass
-        case caisse_ajout == 3:
-            pass
-        case caisse_ajout == 4:
-            pass
-        case caisse_ajout == 5
+        match caisse_ajout:
+            case 1:
+                file1.ajouter(nb_clients)
+                nb_clients -= 1
+            case 2:
+                file2.ajouter(nb_clients)
+                nb_clients -= 1
+            case 3:
+                file3.ajouter(nb_clients)
+                nb_clients -= 1
+            case 4:
+                file4.ajouter(nb_clients)
+                nb_clients -= 1
+            case 5:
+                file5.ajouter(nb_clients)
+                nb_clients -= 1
 
 
 
