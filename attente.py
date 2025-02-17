@@ -1,12 +1,4 @@
-# Variables globales :
-nb_clients = 100000 # nb clients de l'échantillon
-nb_guichets = 5 # nb guichets
-tick = 0 # horloge
-dispo_guichets = [0] * nb_guichets # Tableau de disponibilité des guichets
-file_unique = File() # file créée avec 2 piles, contenant l'heure d'arrivée des chaque client
-file_guichet = [File()] * nb_guichets # une file par guichet
-temps_total = 0 # temps d'attente global
-clients_servis = 0 # nb clients servis
+from random import randint
 
 # Gestion d'une pile avec une liste chaînée :
 class Cellule:
@@ -60,3 +52,35 @@ class File:
         if self.sortie.est_vide():
             raise IndexError("retirer sur une file vide")
         return self.sortie.depiler()
+
+def caisses_aleatoires():
+    file1 = File()
+    file2 = File()
+    file3 = File()
+    file4 = File()
+    file5 = File()
+    while nb_clients != 0:
+        caisse_ajout = randint(1, 5)
+
+        if caisse_ajout == 1:
+            pass
+        case caisse_ajout == 2:
+            pass
+        case caisse_ajout == 3:
+            pass
+        case caisse_ajout == 4:
+            pass
+        case caisse_ajout == 5
+
+
+
+
+# Variables globales :
+nb_clients = 100000 # nb clients de l'échantillon
+nb_guichets = 5 # nb guichets
+tick = 0 # horloge
+dispo_guichets = [0] * nb_guichets # Tableau de disponibilité des guichets
+file_unique = File() # file créée avec 2 piles, contenant l'heure d'arrivée des chaque client
+file_guichet = [File()] * nb_guichets # une file par guichet
+temps_total = 0 # temps d'attente global
+clients_servis = 0 # nb clients servis
